@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment | MediBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-icon">✚</div>
+        <div>
+            <h2>MediBridge</h2>
+            <p>Smart Health Guidance</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html">Symptom Checker</a>
+        <a href="medicine-info.html">Medicine Info</a>
+        <a href="doctor-guidance.html">Doctor Guidance</a>
+        <a href="appointment.html" class="active">Appointment</a>
+    </nav>
+</header>
+
+<section class="appointment-section">
+    <div class="appointment-container">
+        <span class="section-tag">Book Appointment</span>
+        <h1>Request a Doctor Appointment</h1>
+        <p>Fill in your details and symptoms. Our system will save your request.</p>
+
+        <form id="appointmentForm" class="appointment-form">
+            <input type="text" id="patientName" placeholder="Full Name" required>
+            <input type="number" id="patientAge" placeholder="Age" required>
+            <input type="tel" id="patientPhone" placeholder="Phone Number" required>
+
+            <select id="doctorType" required>
+                <option value="">Select Doctor Type</option>
+                <option value="General Physician">General Physician</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Cardiologist">Cardiologist</option>
+            </select>
+
+            <textarea id="patientSymptoms" placeholder="Describe your symptoms..." required></textarea>
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+
+        <div class="appointment-message" id="appointmentMessage"></div>
+    </div>
+</section>
+
+<script src="js/appointment.js"></script>
+</body>
+</html>

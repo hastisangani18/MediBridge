@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Guidance | MediBridge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">✚</div>
+
+        <div>
+            <h2>MediBridge</h2>
+            <p>Smart Health Guidance</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html">Symptom Checker</a>
+        <a href="medicine-info.html">Medicine Info</a>
+        <a href="doctor-guidance.html" class="active">Doctor Guidance</a>
+        <a href="appointment.html">Appointment</a>
+    </nav>
+
+</header>
+
+<section class="doctor-section">
+
+    <div class="doctor-container">
+
+        <span class="section-tag">
+            Health Safety Guidance
+        </span>
+
+        <h1>When Should You Visit a Doctor?</h1>
+
+        <p>
+            Some symptoms can be managed at home,
+            while others require professional medical attention.
+        </p>
+
+        <div class="guidance-grid">
+
+            <div class="guidance-card">
+                <div class="guidance-icon">🤒</div>
+
+                <h3>High Fever</h3>
+
+                <p>
+                    Visit a doctor if fever lasts more than 2 days
+                    or becomes very high.
+                </p>
+            </div>
+
+            <div class="guidance-card">
+                <div class="guidance-icon">😮‍💨</div>
+
+                <h3>Breathing Problems</h3>
+
+                <p>
+                    Difficulty breathing may require immediate
+                    medical attention.
+                </p>
+            </div>
+
+            <div class="guidance-card">
+                <div class="guidance-icon">🤕</div>
+
+                <h3>Severe Headache</h3>
+
+                <p>
+                    Repeated or intense headaches should be checked
+                    by a doctor.
+                </p>
+            </div>
+
+            <div class="guidance-card">
+                <div class="guidance-icon">🤢</div>
+
+                <h3>Vomiting</h3>
+
+                <p>
+                    Continuous vomiting or dehydration can become dangerous.
+                </p>
+            </div>
+
+            <div class="guidance-card">
+                <div class="guidance-icon">💔</div>
+
+                <h3>Chest Pain</h3>
+
+                <p>
+                    Chest pain should never be ignored and may require emergency care.
+                </p>
+            </div>
+
+            <div class="guidance-card">
+                <div class="guidance-icon">🩺</div>
+
+                <h3>Persistent Symptoms</h3>
+
+                <p>
+                    If symptoms continue for many days, seek professional advice.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<div id="guideModal" class="guide-modal">
+    <div class="guide-modal-box">
+        <span class="close-modal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDetails"></p>
+    </div>
+</div>
+
+<script src="js/doctor-guidance.js"></script>
+</body>
+</html>

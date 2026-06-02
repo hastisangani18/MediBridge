@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | MediBridge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">✚</div>
+
+        <div>
+            <h2>MediBridge</h2>
+            <p>Admin Dashboard</p>
+        </div>
+    </div>
+<button onclick="logoutAdmin()" class="logout-btn">Logout</button>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html">Symptom Checker</a>
+        <a href="medicine-info.html">Medicine Info</a>
+        <a href="doctor-guidance.html">Doctor Guidance</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="admin.html" class="active">Admin</a>
+    </nav>
+
+</header>
+
+<section class="admin-section">
+
+    <div class="admin-container">
+
+        <span class="section-tag">
+            Admin Panel
+        </span>
+
+        <h1>Appointment Requests</h1>
+<div class="stats-container">
+
+    <div class="stat-card">
+        <h2 id="totalAppointments">0</h2>
+        <p>Total Appointments</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="generalCount">0</h2>
+        <p>General Physician</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="cardioCount">0</h2>
+        <p>Cardiologist</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="dermaCount">0</h2>
+        <p>Dermatologist</p>
+    </div>
+
+</div>
+        <div id="appointmentList" class="appointment-list">
+
+            <p>Loading appointments...</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

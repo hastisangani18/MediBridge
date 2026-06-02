@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Info | MediBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-icon">✚</div>
+        <div>
+            <h2>MediBridge</h2>
+            <p>Smart Health Guidance</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html">Symptom Checker</a>
+        <a href="medicine-info.html" class="active">Medicine Info</a>
+        <a href="doctor-guidance.html">Doctor Guidance</a>
+        <a href="appointment.html">Appointment</a>
+    </nav>
+</header>
+
+<section class="medicine-section">
+    <div class="medicine-container">
+        <span class="section-tag">Medicine Guide</span>
+        <h1>Search Medicine Information</h1>
+        <p>Find basic usage, dosage, warnings, and side effects.</p>
+
+        <div class="search-box">
+            <input type="text" id="medicineInput" placeholder="Enter medicine name, like Paracetamol">
+            <button id="searchMedicine">Search</button>
+        </div>
+
+        <div class="medicine-result" id="medicineResult">
+            <h3>Medicine details will appear here</h3>
+            <p>Search for Paracetamol, Cetirizine, ORS, Dolo, or Azithromycin.</p>
+        </div>
+    </div>
+</section>
+
+<script src="js/medicine.js"></script>
+</body>
+</html>

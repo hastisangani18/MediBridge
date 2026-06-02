@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker | MediBridge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">✚</div>
+
+        <div>
+            <h2>MediBridge</h2>
+            <p>Smart Health Guidance</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="symptom-checker.html" class="active">Symptom Checker</a>
+        <a href="medicine-info.html">Medicine Info</a>
+        <a href="doctor-guidance.html">Doctor Guidance</a>
+        <a href="appointment.html">Appointment</a>
+    </nav>
+
+</header>
+
+<section class="symptom-section">
+
+    <div class="symptom-container">
+
+        <span class="section-tag">
+            AI Health Assistant
+        </span>
+
+        <h1>Check Your Symptoms</h1>
+
+        <p>
+            Select symptoms and get basic health guidance instantly.
+        </p>
+
+        <div class="symptom-buttons">
+
+            <button>Fever</button>
+            <button>Cough</button>
+            <button>Headache</button>
+            <button>Cold</button>
+            <button>Stomach Pain</button>
+            <button>Vomiting</button>
+
+        </div>
+
+        <textarea id="symptomsInput" placeholder="Describe your symptoms here..."></textarea>
+
+        <button class="check-btn" onclick="analyzeSymptoms()">
+    Analyze Symptoms
+</button>
+        <div class="result-box">
+    <h3>AI Suggestion</h3>
+    <p id="aiResult">Your AI suggestion will appear here.</p>
+</div>
+
+    </div>
+
+</section>
+<script src="js/symptoms.js"></script>
+</body>
+</html>
