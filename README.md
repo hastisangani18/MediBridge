@@ -25,6 +25,7 @@ MediBridge is an AI-powered healthcare web application that helps users with:
 ## Project Overview
 
 MediBridge provides basic health assistance by analyzing symptoms, suggesting possible conditions, offering medicine information, and allowing users to book appointments.
+Note: Backend APIs are configured for local development and require local Node.js server and MySQL setup.
 
 ## Author
 
